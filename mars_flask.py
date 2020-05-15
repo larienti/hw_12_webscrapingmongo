@@ -4,7 +4,7 @@ from flask_pymongo import PyMongo
 import scrape_mars
 
 app = Flask(__name__)
-mongo = PyMongo(app, uri="mongodb://localhost:27017/")
+mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_app")
 #I'm not sure if this is the correct socket or as they call it "pipline"
 #can't find image_urls... not sure why 
 
@@ -12,6 +12,7 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/")
 @app.route("/")
 def home():
     data = mongo.db.collection.find_one()
+    #find our database...... is the problem here? 
     return render_template("index.html", mars=data)
 
 

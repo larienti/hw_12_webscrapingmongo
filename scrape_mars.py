@@ -101,7 +101,6 @@ def scrape():
         "featured_image_url":featured_image_url,
         "mars_weather":mars_weather,
         "html_table": html_profile,
-        "image_urls": image_urls
         }
     browser.quit()
     return data

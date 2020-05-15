@@ -1,0 +1,1 @@
+Must watch the scraper video to create a chrome driver environment inside the app file structure? It doesn't seem to be able to scrape using my local chrome driver
